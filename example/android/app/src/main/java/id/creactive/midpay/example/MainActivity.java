@@ -1,4 +1,4 @@
-package id.creactive.midpay.midpayexample;
+package id.creactive.mid_pay.example;
 
 //import android.os.Bundle;
 //

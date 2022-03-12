@@ -1,4 +1,4 @@
-package id.creactive.midpay;
+package id.creactive.mid_pay;
 
 import android.app.Activity;
 import android.app.Application;
@@ -55,7 +55,7 @@ public class MidpayPlugin implements FlutterPlugin,ActivityAware, MethodCallHand
     public static void registerWith(Registrar registrar) {
         final MidpayPlugin instance = new MidpayPlugin();
         //registrar.addRequestPermissionsResultListener(instance);
-        //final MethodChannel channel = new MethodChannel(registrar.messenger(), "midpay")
+        //final MethodChannel channel = new MethodChannel(registrar.messenger(), "mid_pay")
         //channel.setMethodCallHandler(new MidpayPlugin(registrar, channel));
         Activity activity = registrar.activity();
         Application application = null;
@@ -81,7 +81,7 @@ public class MidpayPlugin implements FlutterPlugin,ActivityAware, MethodCallHand
             this.activity = activity;
             this.application = application;
             this.context = application;
-            channel = new MethodChannel(messenger,   "midpay");
+            channel = new MethodChannel(messenger,   "mid_pay");
             channel.setMethodCallHandler(this);
             if (registrar != null) {
                 // V1 embedding setup for activity listeners.

@@ -1,4 +1,4 @@
-name: midpay
+name: mid_pay
 description: An unofficial Midtrans payment plugin for Flutter, Midtrans is one of the biggest payment gateway provider in Indonesia
 version: 0.0.1
 homepage: https://github.com/creactive-indo
@@ -23,13 +23,13 @@ dev_dependencies:
 # The following section is specific to Flutter.
 flutter:
   #  plugin:
-  #    androidPackage: id.creactive.midpay
+  #    androidPackage: id.creactive.mid_pay
   #    pluginClass: MidpayPlugin
 
   plugin:
     platforms:
       android:
-        package: id.creactive.midpay
+        package: id.creactive.mid_pay
         pluginClass: MidpayPlugin
       ios:
         pluginClass: MidpayPlugin

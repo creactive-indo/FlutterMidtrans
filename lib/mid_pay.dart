@@ -9,7 +9,7 @@ typedef MidtransCallback = Future<void> Function(TransactionFinished transaction
 class Midpay {
   MidtransCallback? finishCallback;
   static final Midpay _instance = Midpay._internal();
-  static const MethodChannel _channel = MethodChannel('midpay');
+  static const MethodChannel _channel = MethodChannel('mid_pay');
 
   Midpay._internal() {
     _channel.setMethodCallHandler(_channelHandler);

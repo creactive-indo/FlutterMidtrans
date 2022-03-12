@@ -16,9 +16,9 @@ public final class GeneratedPluginRegistrant {
   private static final String TAG = "GeneratedPluginRegistrant";
   public static void registerWith(@NonNull FlutterEngine flutterEngine) {
     try {
-      flutterEngine.getPlugins().add(new id.creactive.midpay.MidpayPlugin());
+      flutterEngine.getPlugins().add(new id.creactive.mid_pay.MidpayPlugin());
     } catch(Exception e) {
-      Log.e(TAG, "Error registering plugin midpay, id.creactive.midpay.MidpayPlugin", e);
+      Log.e(TAG, "Error registering plugin mid_pay, id.creactive.mid_pay.MidpayPlugin", e);
     }
   }
 }

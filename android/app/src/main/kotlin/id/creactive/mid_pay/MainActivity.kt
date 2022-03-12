@@ -1,4 +1,4 @@
-package id.creactive.midpay
+package id.creactive.mid_pay
 
 import io.flutter.embedding.android.FlutterActivity
 

@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.14)
-project(midpay LANGUAGES CXX)
+project(mid_pay LANGUAGES CXX)
 
-set(BINARY_NAME "midpay")
+set(BINARY_NAME "mid_pay")
 
 cmake_policy(SET CMP0063 NEW)
 

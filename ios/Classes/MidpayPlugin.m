@@ -39,7 +39,7 @@ FlutterMethodChannel* channel;
 @implementation MidpayPlugin
 + (void)registerWithRegistrar:(NSObject<FlutterPluginRegistrar>*)registrar {
   channel = [FlutterMethodChannel
-      methodChannelWithName:@"midpay"
+      methodChannelWithName:@"mid_pay"
             binaryMessenger:[registrar messenger]];
   MidpayPlugin* instance = [[MidpayPlugin alloc] init];
   [registrar addMethodCallDelegate:instance channel:channel];

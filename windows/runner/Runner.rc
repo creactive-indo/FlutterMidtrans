@@ -90,12 +90,12 @@ BEGIN
         BLOCK "040904e4"
         BEGIN
             VALUE "CompanyName", "id.creactive" "\0"
-            VALUE "FileDescription", "midpay" "\0"
+            VALUE "FileDescription", "mid_pay" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "midpay" "\0"
+            VALUE "InternalName", "mid_pay" "\0"
             VALUE "LegalCopyright", "Copyright (C) 2022 id.creactive. All rights reserved." "\0"
-            VALUE "OriginalFilename", "midpay.exe" "\0"
-            VALUE "ProductName", "midpay" "\0"
+            VALUE "OriginalFilename", "mid_pay.exe" "\0"
+            VALUE "ProductName", "mid_pay" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END

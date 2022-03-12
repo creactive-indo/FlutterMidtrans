@@ -1,6 +1,6 @@
 # midpay_example
 
-Demonstrates how to use the midpay plugin.
+Demonstrates how to use the mid_pay plugin.
 
 ## Getting Started
 

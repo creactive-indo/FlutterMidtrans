@@ -6,10 +6,10 @@
 
 #import "GeneratedPluginRegistrant.h"
 
-#if __has_include(<midpay/MidpayPlugin.h>)
-#import <midpay/MidpayPlugin.h>
+#if __has_include(<mid_pay/MidpayPlugin.h>)
+#import <mid_pay/MidpayPlugin.h>
 #else
-@import midpay;
+@import mid_pay;
 #endif
 
 @implementation GeneratedPluginRegistrant

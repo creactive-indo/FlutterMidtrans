@@ -1,4 +1,4 @@
-group 'id.creactive.midpay'
+group 'id.creactive.mid_pay'
 version '1.0-SNAPSHOT'
 
 buildscript {

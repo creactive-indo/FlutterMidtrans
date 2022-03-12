@@ -1,6 +1,6 @@
 PODS:
   - Flutter (1.0.0)
-  - midpay (0.0.1):
+  - mid_pay (0.0.1):
     - Flutter
     - MidtransCoreKit
     - MidtransKit
@@ -13,7 +13,7 @@ PODS:
 
 DEPENDENCIES:
   - Flutter (from `Flutter`)
-  - midpay (from `.symlinks/plugins/midpay/ios`)
+  - mid_pay (from `.symlinks/plugins/mid_pay/ios`)
 
 SPEC REPOS:
   trunk:
@@ -23,12 +23,12 @@ SPEC REPOS:
 EXTERNAL SOURCES:
   Flutter:
     :path: Flutter
-  midpay:
-    :path: ".symlinks/plugins/midpay/ios"
+  mid_pay:
+    :path: ".symlinks/plugins/mid_pay/ios"
 
 SPEC CHECKSUMS:
   Flutter: 0e3d915762c693b495b44d77113d4970485de6ec
-  midpay: 62c6134b1fe180cecd67f0a116f54f4beb15ba2d
+  mid_pay: 62c6134b1fe180cecd67f0a116f54f4beb15ba2d
   MidtransCoreKit: d82f1dd1b3694bc3e537fee97159d96a9959065f
   MidtransKit: b7425222dc479aa2d98abd12c9f979aa41ee41d2
 

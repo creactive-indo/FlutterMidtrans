@@ -1,7 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:midpay/midpay.dart';
+import 'package:mid_pay/mid_pay.dart';
 
 void main() => runApp(const MyApp());
 
@@ -13,13 +13,13 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  final midpay = Midpay();
+  final mid_pay = Midpay();
 
   //test payment
   _testPayment() {
     //for android auto sandbox when debug and production when release
-    midpay.init("CLIENT KEY", "BASE_URL", environment: Environment.sanbox);
-    midpay.setFinishCallback(_callback);
+    mid_pay.init("CLIENT KEY", "BASE_URL", environment: Environment.sanbox);
+    mid_pay.setFinishCallback(_callback);
     var midtransCustomer = MidtransCustomer(
         'Zaki', 'Mubarok', 'creactive@gmail.com', '085704703691');
     List<MidtransItem> listitems = [];
@@ -28,7 +28,7 @@ class _MyAppState extends State<MyApp> {
     var midtransTransaction = MidtransTransaction(
         100000, midtransCustomer, listitems,
         skipCustomer: true);
-    midpay
+    mid_pay
         .makePayment(midtransTransaction)
         .catchError((err) => print("ERROR $err"));
   }
