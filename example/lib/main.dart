@@ -13,24 +13,22 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  final mid_pay = Midpay();
+  final midpay = Midpay();
 
   //test payment
   _testPayment() {
     //for android auto sandbox when debug and production when release
-    mid_pay.init("CLIENT KEY", "BASE_URL", environment: Environment.sanbox);
-    mid_pay.setFinishCallback(_callback);
-    var midtransCustomer = MidtransCustomer(
-        'Zaki', 'Mubarok', 'creactive@gmail.com', '085704703691');
-    List<MidtransItem> listitems = [];
-    var midtransItems = MidtransItem('IDXXX', 50000, 2, 'Charger');
-    listitems.add(midtransItems);
-    var midtransTransaction = MidtransTransaction(
-        100000, midtransCustomer, listitems,
-        skipCustomer: true);
-    mid_pay
-        .makePayment(midtransTransaction)
-        .catchError((err) => print("ERROR $err"));
+    midpay.init("CLIENT KEY", "BASE_URL", environment: Environment.sanbox);
+    midpay.setFinishCallback(_callback);
+    final customer = MidtransCustomer('Nama', 'Konsumen', 'creactive-indo@gmail.com', '081234567890');
+    final items = [
+      MidtransItem('1', 50000, 1, 'Baby Spa Level 1')
+    ];
+    final total = items.map((item) => item.price).reduce((a, b) => a + b);
+    final transaction = MidtransTransaction(total, customer, items, skipCustomer: true);
+    midpay
+      .makePayment(transaction)
+      .catchError((err) => print("ERROR $err"));
   }
 
   //calback

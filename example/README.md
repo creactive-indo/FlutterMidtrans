@@ -1,4 +1,4 @@
-# midpay_example
+# example
 
 Demonstrates how to use the mid_pay plugin.
 

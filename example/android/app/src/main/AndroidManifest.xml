@@ -15,7 +15,7 @@
          FlutterApplication and put your custom class here. -->
     <application
         tools:replace="android:label"
-        android:label="midpay_example"
+        android:label="example"
         android:icon="@mipmap/ic_launcher"
         android:theme="@style/AppTheme">
         <activity
